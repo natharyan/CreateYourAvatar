@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Create Your Avatar</title>
+        <link rel="shortcut icon" type="image/jpeg" href="images/1(1).png">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
-        
+        html {
+        scroll-behavior: smooth;
+        }
     </style>
+    </head>
     <body style="padding: 10px;min-width: 800px;">
+        <a href="#girl" style="right: 20px;text-decoration: none;position: fixed;bottom: 50px;"><div style="width:fit-content;height:20px;box-shadow: 0px 0px 5px #888;border-radius: 50%;padding: 20px;color: black;">Next</div></a> 
         <!--make seperate columns for male and female-->
         <form>
             Face:
@@ -11,6 +21,34 @@
             <option value="john" selected>john</option>
             <option value="bob">bob</option>
             <option value="tim">tim</option>
+        </select>
+        </form>
+        <br><br>
+        
+        <form>
+            Body:
+        <select id="body">
+            <option value="outfit 1" selected>outfit 1</option>
+            <option value="outfit 2">outfit 2</option>
+            <option value="outfit 3">outfit 3</option>
+
+        </select>
+        </form>
+        
+        <br><br>
+        
+        <button onclick="myFunction()">Create Avatar</button>
+
+        <h3>Boy</h3>
+        <div style="height: fit-content;width: 800px;margin-top: 50px;background-color: rgba(245, 245, 245, 0);">
+        <img alt="face" id="faceimg" src="images/1(1).png" width=270px style="display: block;position: absolute;margin-left: 405px;transform: translateX(-50%);margin-top: 20px;">
+        <img alt="body" id="bodyimg" src="images/imageonline-co-split-image_1_-removebg-preview.png" style="display: block;position: relative;margin-left: 400px;transform: translateX(-50%)">
+        </div>
+ 
+
+        <form>
+            Face:
+        <select id="face1">
             <option value="sarah">sarah</option>
             <option value="karen">karen</option>
             <option value="shasha">shasha</option>
@@ -20,23 +58,28 @@
         
         <form>
             Body:
-        <select id="body">
-            <option value="superman1" selected>superman1</option>
-            <option value="superwomen">superwomen</option>
+        <select id="body1">
+            <option value="outfit 1" selected>outfit 1</option>
+            <option value="outfit 2">outfit 2</option>
+            <option value="outfit 3">outfit 3</option>
 
         </select>
         </form>
         
         <br><br>
         
-        <button onclick="myFunction()">Create Avatar</button>
+        <button onclick="myFunction1()">Create Avatar</button>
 
+        <h3 id="girl">Girl</h3>
 
-        <div style="height: fit-content;width: 800px;margin-top: 50px;background-color: red;">
-        <img alt="face" id="faceimg" src="images/1(1).png" width=200px style="display: block;position: absolute;margin-left: 410px;transform: translateX(-50%)"><br><br>
-        <img alt="body" id="bodyimg" src="images/superman1.png" style="display: block;position: relative;margin-top: 0px;top: 5px;margin-left: 500px;transform: translateX(-50%)">
+        <div id="about1" style="height: fit-content;width: 800px;margin-top: 50px;background-color: rgba(255, 255, 255, 0);">
+        <img alt="face1" id="faceimg1" src="images/4(1).png" width=270px style="display: block;position: absolute;margin-left: 410px;transform: translateX(-50%);margin-top: 18px;">
+        <img alt="body1" id="bodyimg1" src="images/imageonline-co-split-image_1_-removebg-preview.png" style="display: block;position: relative;margin-left: 400px;transform: translateX(-50%)">
         </div>
         <script src="javascript.js"></script>
+            
+        
+
         
     </body>
 </html>
